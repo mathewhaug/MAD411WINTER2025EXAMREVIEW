@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/habitListFragment">
+
+    <fragment
+        android:id="@+id/habitListFragment"
+        android:name="com.matthaug.mad411winter2025examreview.fragments.HabitListFragment"
+        android:label="Habits" >
+        <action
+            android:id="@+id/action_habitList_to_addHabit"
+            app:destination="@id/addHabitFragment" />
+        <action
+            android:id="@+id/action_habitList_to_quoteFragment"
+            app:destination="@id/quoteFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addHabitFragment"
+        android:name="com.matthaug.mad411winter2025examreview.fragments.AddHabitFragment"
+        android:label="Add Habit" />
+
+    <fragment
+        android:id="@+id/quoteFragment"
+        android:name="com.matthaug.mad411winter2025examreview.fragments.QuoteFragment"
+        android:label="Daily Quote" />
+
+</navigation>
